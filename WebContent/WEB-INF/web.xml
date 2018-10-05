@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<servlet>
+		<servlet-name>vis</servlet-name>
+		<servlet-class>com.vismaya.SqServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>vis</servlet-name>
+		<url-pattern>/sq</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>vism</servlet-name>
+		<servlet-class>com.vismaya.AddServlet</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>vism</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+</web-app>
